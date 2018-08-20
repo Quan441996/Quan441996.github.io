@@ -1,0 +1,25 @@
+﻿<html>
+  <head>
+    <title>Demo HTML5</title>
+    <meta charset="utf-8" />
+  </head>
+ <body>
+<p>	
+      &#9679; <b>HTML, CSS và Javascript</b> là bộ 3 ngôn ngữ cần thiết cho mọi web developer. Dù bạn muốn xây dựng nên một trang web đơn giản hay phức tạp đều không thể thiếu chúng. Khóa học này sẽ cung cấp cho bạn những kiến thức cơ bản, cần thiết nhất để bắt đầu trên con đường trở thành một lập trình viên web chuyên nghiệp.
+</p>
+<h3>
+   Ưu điểm của khóa học
+</h3>
+<p>
+	&#43;	<i> Dành cho người mới bắt đầu, chưa từng học lập trình hoặc cho       những ai muốn ôn lại kiến thức căn bản về lập trình web.</i>
+</p>
+  <p>
+    &#43;	<i> Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.</i>
+  
+  </p>
+<p> 
+  &#43;<i> Sử dụng HTML5, CSS3, thiết kế theo chuẩn SEO, responsive, tối ưu hóa cho các công cụ tìm kiếm.</i>
+</p>
+
+
+  </body>
