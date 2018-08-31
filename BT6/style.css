@@ -1,0 +1,135 @@
+html {
+	background: url(pic.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+#chuchay1 {
+	text-align: right;
+	animation: creat 1.5s ease 1; 
+	opacity: 1;
+	color: #e05e5e;
+	
+}
+.chuchay{
+	overflow: hidden;
+}
+@keyframes creat {
+	0%{opacity: 0; transform: translate(10%,0);}
+	25%{opacity: 0.25;}
+	50%{opacity: 0.5;}
+	75%{opacity: 0.75;}
+	100%{opacity: 1;}
+}
+
+#title {
+	 	
+margin-top: -46px;
+	 	
+text-shadow: 0 5px 3px #FF0000;
+	 	
+font-family: cursive;
+	 	
+color: black;
+	 	
+text-align: right;
+	 	
+position: relative;
+	 	
+top: 70px;
+	 	
+left: -33px;
+	 	
+font-size: 50px;
+	 	
+opacity: 1;
+	 	
+animation: tit 2s ease infinite;
+}
+@keyframes tit{
+	0%{opacity: 0.1; }	
+	20%{opacity: 0.2;}
+	40%{opacity: 0.4; }	
+	60%{opacity: 0.6;}
+	80%{opacity: 0.8;}
+	100%{opacity: 1;}
+}
+
+
+#bigg {
+    max-width: 30%;
+    top: 28%;
+    left: 58%;
+    position: absolute;
+    transition: all 2s ease;
+    animation: gg 3s ease infinite;
+}
+#bigg:hover{
+	transform: scale(1.2,1.2);
+}
+@keyframes gg{
+	0%{opacity: 0 ;}
+	10%{opacity: 0.65;}
+	20%{opacity: 0.85;}
+	30%{opacity: 0.75;}
+	40%{opacity: 0.95;}
+	50%{opacity: 0.95;}
+
+	60%{opacity: 0.45;}
+	70%{opacity: 0.35;}
+	80%{opacity: 0.25;}
+	90%{opacity: 0.15;}
+	100%{opacity: 0;}
+	
+
+}
+
+.all{
+	
+	max-width: 1400px;
+	position: relative;
+}
+
+
+#g1{
+		max-width: 5%;
+		p;
+		position:  absolute;
+		top: 32%;
+		animation: gg1 3s ease infinite;
+		transition: all 0.5s ease;
+}
+#g3{
+		max-width: 5%;
+		position:  absolute;
+		left: 16%;
+		animation: gg3 3s ease infinite;
+}
+#g4{
+		max-width: 5%;
+		position: absolute;
+		top: 45%;
+		left: 10%;
+		animation: gg2 3s ease infinite;
+		transition: gg2 0.5s ease;
+}
+@keyframes gg1{
+	0%{top: 62%; opacity: 1;}
+	
+	
+	
+	100%{top: 37%; opacity: 0;}
+
+}
+@keyframes gg2{
+	0%{left:10% ;top:76% ;opacity:1; }
+
+	
+	
+	100%{left:10% ;top:44% ;opacity:0; }
+}
+@keyframes gg3{
+	0%{left:0% ;top:7% ;opacity:0; }
+
+	50%{left:12% ;top:7% ;opacity:1; }
+	
+	100%{left:18% ;top:7% ;opacity:0; }
+}
