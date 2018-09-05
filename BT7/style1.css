@@ -1,0 +1,26 @@
+
+
+img{
+            margin-left: 30%;
+          }
+ h1{
+	text-align: center;
+}
+body{
+	background-color: #212020;
+}
+.gg{
+	border: 1px solid black;
+	    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 1%;
+}
+p{
+	text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 44%;
+}
+div{
+	background-color: white
+}
