@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>Toco Toco</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+     <img id="bn" src="banner.jpg">
+     <div class="menu">
+     		<a href=""><i class="fas fa-home"></i> Trang chủ</a>
+     		<a href="">Tin tức</a>
+     		<a href="">Đặt bàn</a>
+     		<a href="">Khám phá</a>
+     		<a href="">Giảm giá</a>
+     		<a href="">Liên Hệ</a>
+     		<a href="">Blog</a>
+     </div>
+ 	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bn2.jpg" style="width:100%", height="60%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bn1.jpg" style="width:100%", height="60%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bn2.jpg" style="width:100%", height="60%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="tab">
+  <button class="tab1" onclick="openmenu(event, 'Món chính')"id="defaultOpen">Món chính</button>
+  <button class="tab1" onclick="openmenu(event, 'Đồ uống')">Đồ uống</button>
+  <button class="tab1" onclick="openmenu(event, 'Món chay')">Món chay</button>
+  <button class="tab1" onclick="openmenu(event, 'Tráng miệng')">Tráng miệng</button>
+</div >
+
+<div id="Món chính" class="tabcontent">
+         
+    <a href="sushi.html"><img src="anh1.jpg"></a>
+    <a href="sashimi.html"><img src="anh2.jpg"></a>                      
+    <a href="kaiseki ryori.html"><img src="anh3.jpg"></a>
+    <a href="yakitori.html"><img src="anh4.jpg"></a>
+    <a href="tonkatsu.html"><img src="anh5.jpg"></a>
+    <a href="shabu-shabu.html"><img src="anh6.jpg"></a>
+    <a href=""><img src="anh7.jpg"></a>
+    <a href=""><img src="anh8.jpg"></a>
+    <a href=""><img src="anh9.jpg"></a>
+</div>
+
+<div id="Đồ uống" class="tabcontent">
+  <img src="u1.jpg">
+  <img src="u2.jpg">
+  <img src="u3.jpg">
+  <img src="u4.jpg">
+  <img src="u5.jpg">
+</div>
+
+<div id="Món chay" class="tabcontent">
+  <h3>Updating.......</h3>
+  
+</div>
+
+<div id="Tráng miệng" class="tabcontent">
+  <h3>Updating.......</h3>
+  
+</div>
+    
+
+
+<script>
+function openmenu(evt, doan) {
+    var i, tabcontent, tab1;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tab1 = document.getElementsByClassName("tab1");
+    for (i = 0; i < tab1.length; i++) {
+        tab1[i].className = tab1[i].className.replace(" active", "");
+    }
+    document.getElementById(doan).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<div id="bt">
+        <a href="#"><img src="bt.png"></a>
+</div>
+
+<div class="footer">
+    <hr>
+    <p><b>Địa chỉ: Số 14, Ngõ 4 Nguyễn Đình Chiểu, Lê Đại Hành, Hai Bà Trưng, Hà Nội </b><br>
+        <i class="fas fa-clock"></i> Giờ mở cửa: 8h - 22h <br>
+       <i class="fas fa-phone"></i> Hotline: 1900 1234
+
+    </p>
+    
+</div>   
+      </body>
+
+</html>
