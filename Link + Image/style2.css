@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.fix1{
+	border: 3px solid black;
+    width: 33.333333333%;
+    float: left;
+
+
+}
+
+#bn{
+	max-width: 100%;
+}
+
+
+.all{
+	max-width: 1000px;
+	margin: auto;
+}
+
+
