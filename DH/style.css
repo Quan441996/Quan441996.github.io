@@ -1,0 +1,348 @@
+* {box-sizing: border-box;}
+
+body{
+	position: relative;
+}
+
+.a{position:  absolute;border:  2px solid black;border-radius: 50%;width: 53%;padding-top: 53%;left: 24%;background-color:  aliceblue;}
+	
+
+.a1{
+	 position: absolute;
+	 border: 1px solid #607D8B;
+	 border-radius: 50%;
+	 background-color: #607D8B;
+	 width: 84%;
+	 padding-top: 84%;
+	 left: 8%;
+	 top: 8%;
+}
+
+.b1{
+	   position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 25%;
+    padding-top: 25%;
+    left: 16%;
+    top: 43%;
+    background-color: white;
+}    
+.b2{
+	    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 25%;
+    padding-top: 25%;
+    left: 38%;
+    top: 62%;
+    background-color: white;
+}
+.b3{
+	    position: absolute;
+	    border: 1px solid black;
+	    border-radius: 50%;
+	    width: 25%;
+	    padding-top: 25%;
+	    right: 16%;
+	    top: 43%;
+	    background-color: white;
+}
+.c1{
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 17%;
+	padding-top: 17%;
+	left: 20%;
+	top: 47%;
+	background-color: #c6c1c1;
+}
+.c2{
+	    position: absolute;
+	    border: 1px solid black;
+	    border-radius: 50%;
+	    width: 17%;
+	    padding-top: 17%;
+	    right: 41%;
+	    top: 66%;
+	    background-color: #c6c1c1;
+}
+.c3{
+	    position: absolute;
+	    border: 1px solid black;
+	    border-radius: 50%;
+	    width: 17%;
+	    padding-top: 17%;
+	    right: 20%;
+	    top: 47%;
+	    background-color: #c6c1c1;
+}
+.n12{
+	    position: absolute;
+	    top: -4%;
+	    left: 47%;
+	    font-size: 4vmin;
+}
+.n3{
+	    position: absolute;
+	    top: 41%;
+	    left: 95%;
+	    font-size: 4vmin;
+	    }
+.n6{
+	  position: absolute;
+	  top: 90%;
+	  left: 49%;
+	  font-size: 4vmin;
+}
+.n9{
+	position: absolute;
+	top: 41%;
+	right: 95%;
+	font-size: 4vmin;
+}
+.d12{
+	font-size: 2vmin;
+	position: absolute;
+	left: 44%;
+	top: -8%;
+}
+.d3{
+	font-size: 2vmin;
+	position: absolute;
+	left: 91%;
+	bottom: 34%;
+}
+.d6{
+	font-size: 2vmin;
+	position: absolute;
+	left: 50%;
+	bottom: -10%;
+}
+.d9{
+	font-size: 2vmin;
+	position: absolute;
+	right: 91%;
+	bottom: 34%;
+}
+.cc1{
+	
+	    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 7%;
+    padding-top: 3%;
+    background-color: black;
+    left: 48%;
+    top: 48%;
+}
+.chamto{
+	position: absolute;
+    border: 2px;
+    border-radius: 50%;
+    width: 5%;
+    padding-top: 5%;
+    background-color: black;
+    left: 48%;
+    top: 44%;
+}
+.kim1{
+	    position: absolute;
+    border: 1px solid black;
+    width: 47%;
+    top: 47%;
+    margin-left: 6%;
+    background-color: black;
+}
+.kim2{
+	position: absolute;
+    border: 2px solid black;
+    height: 34%;
+    top: 16%;
+    left: 50%;
+}
+.gachcheo1{
+	position: absolute;
+	width: 97%;
+	height: 1%;
+	background-color: #9E9E9E;
+	transform: rotate(423deg);
+	top: 49%;
+	left: 0%;
+	transform-origin: 50% 100%;
+}
+.gachcheo2{
+	position: absolute;
+	width: 97%;
+	height: 1%;
+	background-color: #9E9E9E;
+	transform: rotate(480deg);
+	top: 48%;
+	left: 0%;
+	transform-origin: 50% 100%;
+}
+.gachcheo3{
+	position: absolute;
+	width: 97%;
+	height: 1%;
+	background-color: #9E9E9E;
+	transform: rotate(510deg);
+	top: 46%;
+	left: 0%;
+	transform-origin: 50% 100%;
+}
+.gachcheo4{
+	position: absolute;
+	width: 97%;
+	height: 1%;
+	background-color: #9E9E9E;
+	transform: rotate(391deg);
+	top: 51%;
+	left: 0%;
+	transform-origin: 50% 100%;
+}
+.tron{
+	
+position:  absolute;
+	
+border: 1px solid aliceblue;
+	
+border-radius:  50%;
+	
+padding-top: 89%;
+	
+width: 89%;
+	
+top: 5%;
+	
+left: 5%;
+	
+background-color: aliceblue;
+}
+.cheo1{
+
+position:  absolute;
+
+width: 88%;
+
+height: 2px;
+
+top: 49%;
+
+left: 4%;
+
+background-color: #009688;
+
+transform-origin: 50% 100%;
+
+transform: rotate(299deg);
+}
+.cheo2{
+
+position: absolute;
+
+width: 87%;
+
+height: 2px;
+
+top: 47%;
+
+left: 4%;
+
+background-color: #009688;
+
+transform-origin: 50% 100%;
+
+transform: rotate(334deg);
+}
+.cheo3{
+
+position: absolute;
+
+width: 89%;
+
+height: 2px;
+
+top: 49%;
+
+left: 4%;
+
+background-color: #009688;
+
+transform-origin: 50% 100%;
+
+transform: rotate(424deg);
+}
+.cheo4{
+	
+position: absolute;
+	
+width: 87%;
+	
+height: 2px;
+	
+top: 47%;
+	
+left: 7%;
+	
+background-color: #009688;
+	
+transform-origin: 50% 100%;
+	
+transform: rotate(210deg);
+}
+.che{
+	
+position:  absolute;
+	
+border: 1px solid white;
+	
+border-radius: 50%;
+	
+width: 75%;
+	
+padding-top: 75%;
+	
+top: 13%;
+	
+left: 12%;
+	
+background-color: white;
+}
+.kim3{
+
+position:  absolute;
+
+width: 42%;
+
+padding-top:  1%;
+
+background-color:  black;
+
+top: 51%;
+
+left: 10%;
+
+transform-origin:  100% 100%;
+
+transform: rotate(223deg);
+}
+.kim4{
+	
+position: absolute;
+	
+width: 30%;
+	
+padding-top: 2%;
+	
+background-color: black;
+	
+top: 51%;
+	
+left: 21%;
+	
+transform-origin: 100% 100%;
+	
+transform: rotate(412deg);
+}
