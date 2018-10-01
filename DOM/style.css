@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+	color: #795548;
+}
+.box{
+	    border: 5px solid black;
+	    padding: 20px;
+	    background-color: beige;
+}
+body{
+
+background-color: #9E9E9E;
+}
+p{
+	font-size: 15px;
+}
+
