@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Demo Heading</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+    <div class="calcu">
+      
+      <input id="ketqua" type="text" name="">
+
+
+  <div class="all">   
+     <div>
+      <button onclick="phantram()">%</button>
+      <button onclick="canbac2()">&#8730;</button>
+      <button onclick="square()">x^2</button>
+      <button onclick="thapphan()">1/x</button>
+     </div>
+
+     <div> 
+      <button onclick="giaithua()">x!</button>
+      <button onclick="xoahet()">C</button>
+      <button onclick="del()">&#8658;</button>
+      <button onclick="clickbuttom(this)">/</button>        
+     </div> 
+
+     <div>
+      <button onclick="clickbuttom(this)">7</button>
+      <button onclick="clickbuttom(this)">8</button>
+      <button onclick="clickbuttom(this)">9</button>
+      <button onclick="clickbuttom(this)">*</button>    
+     </div> 
+
+     <div>
+      <button onclick="clickbuttom(this)">4</button>
+      <button onclick="clickbuttom(this)">5</button>
+      <button onclick="clickbuttom(this)">6</button>
+      <button onclick="clickbuttom(this)">-</button>
+     </div> 
+
+     <div>
+       <button onclick="clickbuttom(this)">1</button>
+       <button onclick="clickbuttom(this)">2</button>
+       <button onclick="clickbuttom(this)">3</button>
+       <button onclick="clickbuttom(this)">+</button>
+     </div>
+
+     <div>
+       <button onclick="clickbuttom(this)" class="so0">0</button>
+       <button onclick="clickbuttom(this)">.</button>
+       <button onclick="ketqua1()">=</button>
+     </div>
+    
+      
+  </div>
+
+  <script>
+
+ var ketqua = document.getElementById('ketqua');
+
+
+function clickbuttom(a) {
+  var type = a.innerHTML; 
+ 
+   ketqua.value += type;
+
+}
+
+function ketqua1 (){
+  ketqua.value = eval(ketqua.value)
+}
+
+function square(){
+  ketqua.value = ketqua.value*ketqua.value;
+}
+
+function canbac2(){
+  ketqua.value = Math.sqrt(ketqua.value)
+}
+  
+function xoahet(){
+
+  ketqua.value = ""
+    
+  }
+
+function phantram(){
+  ketqua.value = ketqua.value/100;
+}  
+
+
+function thapphan(){
+  ketqua.value = 1/ketqua.value;
+}
+
+function del(){
+    
+    ketqua.value = ketqua.value.substr(0,ketqua.value.length - 1)
+  }
+
+
+  function giaithua() {
+    var a = ketqua.value
+    ketqua.value = 1;
+    for( i = 1 ; i <= a ; i++){
+      ketqua.value = ketqua.value * i;
+      }
+    }
+  
+
+
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.so0{
+	    width: 47%;
+}
+
+*{box-sizing: border-box;}
+
+
+body{
+	max-width: 1200px;
+	margin: auto;
+}
+input{
+	width: 90%;
+	height: 9%;
+	margin-left: 5%;
+	margin-top: 4%;
+	font-size: 43px;
+	border: 4px solid #9E9E9E;
+}
+
+.calcu{
+	    border: 5px solid black;
+	    max-width: 52%;
+	    margin: auto;
+	    margin-top: 4%;
+	    background-color: #323838;
+}
+
+div button {
+	width: 23%;
+	height: 7%;
+	margin-top: 6px;
+}
+.all{
+	
+margin-top: 12%;
+	
+margin-left: 5%;
+	
+margin-bottom: 11%;
+}
