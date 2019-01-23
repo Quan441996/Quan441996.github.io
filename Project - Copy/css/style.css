@@ -1,0 +1,786 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alltimeline {
+    padding-top: 4%;
+    padding-left: 2%;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1095px;
+}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+#canv{
+  width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+/*****************HOVERMENU************************/
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ffd7d7;
+  height: 2.5px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+.hvr-outline-in {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-outline-in:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  border: white solid 4px;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+  top: 8px;
+  right: 63px;
+  bottom: 10px;
+  left: 24px;
+  opacity: 1;
+  z-index: 1
+}
+
+/*****************Banner + Menu*********************/
+
+
+img.pictt1-banner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34%;
+}
+img.pictt2-banner{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34%;
+}
+
+
+
+p#chubanner {
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    color: white;
+    font-size: 4.6rem;
+    font-family: vivaldi;
+   
+}
+
+
+#pic-banner {
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+}
+
+.nav-item {
+    padding-right: 1.45rem;
+    padding-left: 1.45rem;
+}
+ .menuchinh{
+  font-family: serif;
+}
+
+
+/*************************Groom&Bride****************/
+.gioithieu{
+  margin: 80px 0 150px;
+}
+
+ .couple {
+    padding-top: 5%;
+    position: relative;
+}
+         
+ img.gro {
+    width: 100%;
+    float: right;
+    margin-right: 2.2%;
+}
+
+img.bri {
+    width: 100%;
+    margin-left: 2.2%;
+}         
+
+
+#menu2 {
+    
+    font-family: Vladimir Script;
+    font-size: 2.7rem;
+    text-shadow: 10px 10px 11px grey;
+}         
+.traitim {
+    position: absolute;
+    top: 50%;
+    left: 47.4%;
+}
+
+   #heart {
+      position: relative;
+      width: 100px;
+      height: 93px;
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 27%;
+      top: 0;
+      width: 28%;
+      height: 45%;
+      background: white;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+    /*CD time*/
+.timer {
+    padding-top: 3%;
+    position: relative;
+}
+
+img#tim3 {
+    position: absolute;
+    top: 63%;
+    left: 49.6%;
+    width: 4.5%;
+}
+
+img#tim2 {
+    position: absolute;
+    top: 63%;
+    left: 66.6%;
+    width: 4.5%;
+}
+
+img#tim1 {
+    position: absolute;
+    top: 63%;
+    left: 32.6%;
+    width: 4.5%;
+}
+p#cdtime {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: vivaldi;
+    margin-left: 2%;
+}
+
+
+#ngpg{
+  font-family: cursive;
+  font-size: 1.1rem;
+  margin: auto;
+  padding-left: 30%;
+}
+ /*******************Our Story*************/
+
+.cauchuyen{
+  background-color: #fbfbfa;
+
+}
+
+#menu3 {
+    
+    font-size: 2.7rem;
+    font-family: Vladimir Script;
+    text-shadow: 10px 10px 11px grey;
+    margin-top: -3%;
+}
+
+/********TIMELINE*********/
+
+.cauchuyen .timeline .picour img{
+  width: 100%;
+
+}
+.timeline{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  padding: 40px 0;
+}
+.timeline .content #anh1our{
+  padding-bottom: 9%;
+}
+
+.timeline:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 1.5px;
+  height: 88%;
+  background-color: #dfdfdf;
+}
+
+.timeline ul{
+  margin: 0;
+  padding: 0;
+}
+.timeline ul li{
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  
+}
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  
+}
+.timeline .content{
+  padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background: #dfdfdf;
+    right: 14px;
+    width: 100px;
+    top: 36px;
+}
+.timeline ul li:nth-child(even):before{
+  content: "";
+    position: absolute;
+    height: 1.5px;
+    background: #dfdfdf;
+    left: 14px;
+    width: 100px;
+    top: 354px;
+}
+
+.timeline h3{
+  text-align: center;
+  font-family: forte;
+}
+.timeline p{
+  font-family: Seogue UI;
+}
+.timour img{
+  width: 50%;
+}
+.timour{
+    position: absolute;
+    background-color: #fbfbfa;   
+    padding-bottom: 0.4%;
+    left: 49.3%;
+}
+#timour1{
+  top: 5.4%;
+}
+#timour2{
+  top: 32.6%;
+}
+#timour3{
+  top: 77.5%;
+}
+
+
+
+/**********************FRIENDS*******************/
+
+.Friends{
+  margin: 100px 0 100px 0;
+}
+
+#menu4{
+   font-family: Vladimir Script;
+    font-size: 2.7rem;
+    text-shadow: 10px 10px 11px grey;
+}
+
+ .slider {
+        width: 100%;
+        margin: 68px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      border-radius: 50%;
+
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+      font-size: 36px;
+    }
+.slick-prev,.slick-next{
+  top: 120%;
+}
+.slick-prev{
+  left: 42%;
+}
+.slick-next{
+  right: 42%;
+}
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      border-radius: 50%;
+      filter: grayscale(80%) opacity(0.8);
+
+    }
+    
+
+    .slick-current {
+      filter: grayscale(0);
+      border-radius: 50%;
+      
+    }
+
+/*******************When&Where******************/
+
+.diadiem{
+  margin: 200px 0 100px 0;
+}
+
+#menu5{
+      font-size: 2.7rem;
+    font-family: Vladimir Script;
+    text-shadow: 10px 10px 11px grey;
+}
+
+#picwhen {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 9px;
+  margin-top: 7%;
+}
+
+.column img {
+  margin-top: 18px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#text_right{
+  text-align: right;
+  
+}
+#text_right1{
+  margin-bottom: 0;
+}
+#picwhen h2{
+  font-family: vivaldi;
+}
+.text_top{
+  margin-top: 2.5%;
+  
+}
+#picwhen p{
+  font-family: Poor Richard;
+}
+#picwhen .picwh3{
+  
+  margin-top: 0;
+}
+
+#picwhen h6{
+  font-size: 16px;
+}
+
+#text_right hr{
+  float: right;
+  width: 92%;
+}
+
+.text_top hr{
+  width: 92%;
+}
+
+
+/*************************RSVP**********************/
+
+
+#menu6{
+   font-family: Vladimir Script;
+    font-size: 2.7rem;
+    text-shadow: 10px 10px 11px grey;
+   color: black;
+   margin-top: -8%;
+}
+
+.RSVP {
+    background-image: url(../img/RSVP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 16%;
+    padding: 0 90px; 
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+  
+
+/****FORM*******/
+  .RSVP form{
+    background-color: white;
+    width: 78%;
+    margin-bottom: 6%;
+    margin-top: 6%;
+  }
+
+
+.RSVP input, .RSVP form .botron{
+  border: 1px solid grey;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.RSVP form h2{
+  font-family: Segoe Script;
+}
+
+.RSVP form button{
+  width: 50%;
+  background-color: #fc81c9; 
+  font-family:Segoe Script;
+  font-size: 15px;
+}
+
+.form-control{
+      padding: .5rem 11px .6rem;
+}
+input[type=email]{
+  width: 96%;
+}
+input[type=text]{
+  width: 96%;
+}
+/***hover form****/
+.RSVP form input[type=text]:focus {
+border: 1px solid #ff4081;
+box-shadow: 0 1px 0 0 #ff4081; 
+}
+
+.RSVP form input[type=email]:focus {
+border: 1px solid #ff4081;
+box-shadow: 0 1px 0 0 #ff4081; 
+}
+
+.RSVP form .custom-select:focus{
+  border-color: #ff4081;
+  box-shadow: 0 0 0px 0.5px #ff4081
+}
+
+.RSVP form .doimau:focus{
+  border-color: #ff4081;
+  box-shadow: 0 0 0px 0.5px #ff4081;
+}
+
+.RSVP form option:focus{
+  background-color: #ff4081;
+}
+
+/*********************BLOG**********************/
+
+.blog{
+  margin: 100px 0 100px;
+
+}
+
+#menu7 {
+    font-size: 2.7rem;
+    font-family: Vladimir Script;
+    text-shadow: 10px 10px 11px grey;
+    margin-bottom: 2%;
+}
+
+
+.blog .card{
+  overflow: hidden;
+}
+
+.blog #picblog{  
+  filter: grayscale(50%);
+  
+}
+
+.blog #picblog:hover{  
+  filter: grayscale(0);
+}
+.blog .card-body{
+  background: white;
+  z-index: 1;
+}
+
+.blog .card-footer{
+  border-top: 1px solid #ffd7d7; 
+}
+
+/***************MEMORIES***********************/
+
+#menu8{
+   font-size: 2.7rem;
+    font-family: Vladimir Script;
+    text-shadow: 10px 10px 11px grey;
+    margin-top: -80px;
+}
+
+.hoiuc{
+  margin: 200px 0 100px;
+   background-image: url(file:///C:/Users/admin/Desktop/Project/img/nen.jpg);
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-bottom: 3%;
+}
+
+
+.hoiuc .memory{
+  width: 1300px;
+  margin: 40px auto;
+}
+
+.hoiuc .memory img{
+  max-width: 90%;
+  box-shadow: 10px 10px 25px #293e41;
+  filter: grayscale(65%);
+  transform: scale(1);
+  border: 4px solid #1d1c1c;
+}
+.hoiuc .memory .metop{
+  margin-top: 6%;
+}
+
+.hoiuc .memory #me1:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+  
+}
+
+.hoiuc .memory #me2:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me3:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me4:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me5:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me6:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me7:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me8:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me9:hover{
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.hoiuc .memory #me1{
+  transform: rotate(-6deg);
+}
+
+.hoiuc .memory #me2{
+  transform: rotate(5deg);
+}
+
+.hoiuc .memory #me3{
+  transform: rotate(-5deg);
+}
+
+.hoiuc .memory #me4{
+  transform: rotate(5deg);
+}
+
+.hoiuc .memory #me5{
+  transform: rotate(4deg);
+}
+
+.hoiuc .memory #me6{
+  transform: rotate(-4deg);
+}
+
+.hoiuc .memory #me7{
+  transform: rotate(-5deg);
+}
+
+.hoiuc .memory #me8{
+  transform: rotate(5deg);
+}
+
+.hoiuc .memory #me9{
+  transform: rotate(-6deg);
+}
+
+
+
+
+.bando{
+  margin: 100px 0 50px;
+}
+
+#menu9{
+   font-size: 2.7rem;
+    font-family: Vladimir Script;
+    text-shadow: 10px 10px 11px grey;
+}
+
+.bando iframe{
+  width: 100%;
+}
+
+.gachngang img{
+ width: 50%;
+ margin-left: 27%;
+}
+
+hr{
+  color: #6f6f6f;
+}
+
+.phancuoi{
+    margin-top: 4%;
+    background-image: url("file:///C:/Users/admin/Desktop/Project/img/footer.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.phancuoi #picfoot{
+  width: 20%;
+  margin-top: 7%;
+  position: absolute;
+  left: 42%;
+}
+.phancuoi .chufoot1{
+position: absolute;
+    margin-top: 12%;
+    left: 26%;
+    color: #fef8f8;
+    font-size: 4.6rem;
+    font-family: vivaldi;
+}
+
+.phancuoi .chufoot2{
+    position: absolute;
+    margin-top: 12%;
+    right: 21%;
+    color: #fef8f8;
+    font-size: 4.6rem;
+    font-family: vivaldi;
+}
+
+
