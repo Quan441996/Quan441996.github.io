@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			max-width: 1200px;
+			margin: auto;
+			background-color: red;
+  			background-image: linear-gradient(to right, blue, violet);
+		}
+
+		.main{
+			max-width: 100%;
+			margin-top: 15%;
+		}
+
+		#display{
+			width: 100%;
+			font-size: 75px;
+			padding: 10px;
+			text-align: right;
+			outline: none;
+			background-color: #1C1C1C;
+			color: white;
+			border-width: inherit;
+		}
+
+		.main .calculator-button{
+			font-size: 35px;
+			color: white;
+			outline: none;
+			text-align: center;
+			padding: 5%;
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+			text-transform: uppercase;
+			background-color: #FF9500;
+			border-width: 0.1px;
+		}
+
+		.main .num-button{
+			font-size: 35px;
+			color: white;
+			outline: none;
+			text-align: center;
+			padding: 5%;
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+			text-transform: uppercase;
+			background-color: #989898;
+			border-width: 0.1px;
+		}
+
+		.main .misc-button{
+			font-size: 35px;
+			color: white;
+			outline: none;
+			text-align: center;
+			padding: 5%;
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+			text-transform: uppercase;
+			background-color: #505050;
+			border-width: 0.1px;
+		}
+
+		.main .calculator-button:active, .main .num-button:active{
+			box-shadow: 4px 5px 20px 5px grey inset;
+		}
+
+		.main #selectBox{
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main row">
+	<div class="col-7" id="bgColor" style="max-width: 40%; border: 30px solid #383e44; border-radius: 5%;">
+
+		<div class="row">
+			<div class="col-12" style="padding: 0">
+				<input id="display" type="text">
+			</div>
+		</div>
+
+		<div class="row">
+	      <input class="misc-button num-bg1 col-3" id="clearButton" value="C" type="button"></input>
+	      <input class="misc-button num-bg1 col-3" data-role="calculate" value="&#177;" type="button"></input>
+	      <input class="misc-button num-bg1 col-3" id="percent" data-role="calculate" value="%" type="button"></input>
+	      <input id="bgCalRow1" class="calculator-button col-3" value="/" type="button" data-role="calculate"></input>
+	    </div>
+
+	    <div class="row">
+	      <input class="num-button num-bg2 col-3" data-role="number" value="7" type="button"></input>
+	      <input class="num-button num-bg2 col-3" data-role="number" value="8" type="button"></input>
+	      <input class="num-button num-bg2 col-3" data-role="number" value="9" type="button"></input>
+	      <input id="bgCalRow2" class="calculator-button col-3" data-role="calculate" value="*" type="button"></input>        
+	    </div>  
+	    
+	    <div class="row">
+	      <input class="num-button num-bg3 col-3" data-role="number" value="4" type="button"></input>
+	      <input class="num-button num-bg3 col-3" data-role="number" value="5" type="button"></input>
+	      <input class="num-button num-bg3 col-3" data-role="number" value="6" type="button"></input>
+	      <input id="bgCalRow3" class="calculator-button col-3" data-role="calculate" value="-" type="button"></input>    
+	    </div>   
+	    
+	    <div class="row">
+	      <input class="num-button num-bg4 col-3" data-role="number" value="1" type="button"></input>
+	      <input class="num-button num-bg4 col-3" data-role="number" value="2" type="button"></input>
+	      <input class="num-button num-bg4 col-3" data-role="number" value="3" type="button"></input>
+	      <input id="bgCalRow4" class="calculator-button col-3" data-role="calculate" value="+" type="button"></input>
+	    </div>  
+	    
+	    <div class="row">
+	      <input id="numSpecial" class="num-button num-bg5 col-6" data-role="number" value="0" type="button"></input>
+	      <input class="num-button num-bg5 col-3" data-role="number" value="." type="button"></input>
+	      <input class="col-3" id="equal" value="=" type="button"></input>
+	    </div>
+
+	</div>
+
+	<div id="selectBox" class="col-5">
+		<div>
+			<h4>CHANGE ALL COLOR</h4>
+			<input id="bgBlack" type="button" value="Black">
+			<input id="bgGrey" type="button" value="Grey">
+			<input id="bgViolet" type="button" value="Violet">
+		</div>
+		<div>
+			<h4 class="mt-3">CHANGE THE COLOR OF EACH ROW BUTTON</h4>
+			<input id="bgRow1" class="mt-1 mr-2" type="button" value="CHANGE COLOR ROW 1">
+			<input id="bgRow2" class="mt-1" type="button" value="CHANGE COLOR ROW 2">
+			<input id="bgRow3" class="mt-3 mr-2" type="button" value="CHANGE COLOR ROW 3">
+			<input id="bgRow4" class="mt-3" type="button" value="CHANGE COLOR ROW 4">
+			<input id="bgRow5" class="mt-3" type="button" value="CHANGE COLOR ROW 5">
+		</div>
+		<div>
+			<h4 class="mt-3">CHANGE DISPLAY COLOR AS YOU LIKE</h4>
+			<input id="getColor" type="text" value="">
+			<input id="confirmButton" type="button" value="Change">
+		</div>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+
+		$(".num-button, .calculator-button").on('click',function(){	
+			if($(this).data("role")=="number"){
+				$("#display").val($("#display").val()+$(this).val());
+			}
+			else{
+				if($("#display").val()!=""){
+					$("#display").val($("#display").val()+$(this).val());	
+				}
+			}
+		});
+
+		$("#equal").on('click',function(){
+  			var expression = $("#display").val();
+  			$("#display").val(eval(expression));
+		});
+
+		$("#clearButton").on("click",function(){
+			$("#display").val("");
+		});
+
+		$("#percent").on("click",function(){
+			var percent = $("#display").val()/100;
+			$("#display").val(percent);
+		});
+
+		//CHANGE ALL BACKGOUND COLOR
+
+		$("#bgBlack").on("click",function(){
+			$("#bgColor").css("border", "30px solid black");
+			$("#display").css("background-color", "grey");
+		});
+
+		$("#bgGrey").on("click",function(){
+			$("#bgColor").css("border", "30px solid grey");
+			$("#display").css("background-color", "black");
+		});
+
+		$("#bgViolet").on("click",function(){
+			$("#bgColor").css("border", "30px solid #691e69");
+			$("#display").css("background-color", "blue");
+		});
+
+		// ROW COLOR
+
+		$("#bgRow1").on("click",function(){
+			$(".misc-button").css("background-color", "#614141");
+			$("#bgCalRow1").css("background-color", "#614141")
+		});
+
+		$("#bgRow2").on("click",function(){
+			$(".num-bg2").css("background-color", "#614141");
+			$("#bgCalRow2").css("background-color", "#614141")
+		});
+
+		$("#bgRow3").on("click",function(){
+			$(".num-bg3").css("background-color", "#614141");
+			$("#bgCalRow3").css("background-color", "#614141")
+		});
+
+		$("#bgRow4").on("click",function(){
+			$(".num-bg4").css("background-color", "#614141");
+			$("#bgCalRow4").css("background-color", "#614141")
+		});
+
+		$("#bgRow5").on("click",function(){
+			$(".num-bg5").css("background-color", "#614141");
+			$("#equal").css("background-color", "#614141")
+		});
+
+		// CHANGE DISPLAY COLOR
+
+		$("#confirmButton").on("click",function(){
+			var color = $("#getColor").val();
+			$("#display").css("background-color", color);
+		});
+
+	</script>
+</body>
+</html>
